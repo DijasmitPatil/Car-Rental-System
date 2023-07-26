@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage"
+    android:background="@drawable/gradient_background"
+
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title"
+        android:fontFamily="@font/times_new_roman_bold"
+        android:text="Login"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="38dp" />
+
+    <EditText
+        android:id="@+id/et_regmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_design"
+        android:drawableLeft="@drawable/mail"
+        android:textColor="@color/Blue"
+        android:layout_marginHorizontal="40dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/times_new_roman"
+        android:hint="Enter Email"
+        android:padding="10dp"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/et_regpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_design"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:fontFamily="@font/times_new_roman"
+        android:hint="Enter Password"
+
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/Blue"
+        android:textColorHint="@color/black"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/register_button"
+        android:layout_marginHorizontal="40dp"
+        android:text="Login"
+        android:fontFamily="@font/times_new_roman_bold"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_dont_have_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/times_new_roman"
+        android:gravity="center"
+        android:text="Don't have an account? Sign Up "
+        android:textColor="@color/red"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
